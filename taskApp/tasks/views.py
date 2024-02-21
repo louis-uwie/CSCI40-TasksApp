@@ -3,7 +3,20 @@ from django.http import HttpResponse
 
 def taskList(request):
     ctx = {
-        "Hello WOrld"
-        }
+        "name": "TASKS FOR THE DAY",
+        "lists": [
+            {
+                'name': 'CSCI 40',
+                'list': [
+                    'Create Python Environment',
+                    'Install Django and Dotenv',
+                    'Create Django Project',
+                    'Configuro Django Project',
+                    'Create App under project'
+                ]
+            }
+        ],
+        "image path": "taskApp/tasks/images/download.jpeg"
+    }
 
-    return render(request, "recipeList.html", ctx)
+    return render(request, "tasks.html", ctx)

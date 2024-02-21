@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ name }}</title>
+    <style>
+        body {
+            font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>{{ name }}</h1>
+    {% for task_list in lists %}
+        <h2>{{ task_list.name }}</h2>
+        <ul>
+            {% for task in task_list.list %}
+                <li>{{ task }}</li>
+            {% endfor %}
+        </ul>
+    {% endfor %}
+    {% load static %}
+    <img src="{% static 'download.jpeg' %}" alt="Image">
+</body>
+</html>

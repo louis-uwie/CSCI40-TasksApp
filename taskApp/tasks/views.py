@@ -19,4 +19,4 @@ def taskList(request):
         "image path": "taskApp/tasks/images/download.jpeg"
     }
 
-    return render(request, "tasks.html", ctx)
+    return render(request, "tasksList.html", ctx)

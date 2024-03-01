@@ -1,0 +1,639 @@
+Last login: Tue Feb 27 11:34:02 on ttys000
+pamy@Pamelas-MacBook-Pro-2 ~ % ls
+Applications			Music
+CSCI40_Ex1			Pictures
+Desktop				Public
+Documents			iCloud Drive (Archive)
+Downloads			iCloud Drive (Archive) - 1
+Library				myenv
+Movies				mysite
+pamy@Pamelas-MacBook-Pro-2 ~ % cd Desktop 
+pamy@Pamelas-MacBook-Pro-2 Desktop % ls
+32x32 Portal Asset Pack.zip
+BinwagDelapazZabalaA4.pdf
+CSCI20_200747.pdf
+ECON110 BOOK.pdf
+Notion-3.1.1-universal.dmg
+Recipe List Context.txt
+Screenshot 2024-02-15 at 5.01.28 PM.png
+Screenshot 2024-02-15 at 5.37.20 PM.png
+Screenshot 2024-02-16 at 8.01.58 AM.png
+Screenshot 2024-02-22 at 1.53.29 PM.png
+Screenshot 2024-02-23 at 11.11.18 PM.png
+Screenshot 2024-02-25 at 12.09.21 AM.png
+Screenshot 2024-02-26 at 2.54.19 PM.png
+UWIE ACADEMICS
+mom
+pamy@Pamelas-MacBook-Pro-2 Desktop % cd UWIE\ ACADEMICS/Github 
+pamy@Pamelas-MacBook-Pro-2 Github % ls
+CSCI40-TasksApp			FirstProject_TileBasedMovement
+CSCI40_Lab1			GameOutput2_Platformers
+pamy@Pamelas-MacBook-Pro-2 Github % cd CSCI40-TasksApp 
+pamy@Pamelas-MacBook-Pro-2 CSCI40-TasksApp % ls
+myenv	taskApp
+pamy@Pamelas-MacBook-Pro-2 CSCI40-TasksApp % source myenv/bin/activate
+(myenv) pamy@Pamelas-MacBook-Pro-2 CSCI40-TasksApp % ls
+myenv	taskApp
+(myenv) pamy@Pamelas-MacBook-Pro-2 CSCI40-TasksApp % cd taskApp/manage.py shell
+cd: string not in pwd: taskApp/manage.py
+(myenv) pamy@Pamelas-MacBook-Pro-2 CSCI40-TasksApp % cd taskApp/manage.py shell
+cd: string not in pwd: taskApp/manage.py
+(myenv) pamy@Pamelas-MacBook-Pro-2 CSCI40-TasksApp % cd taskApp/manage.py      
+cd: not a directory: taskApp/manage.py
+(myenv) pamy@Pamelas-MacBook-Pro-2 CSCI40-TasksApp % python taskApp/manage.py shell
+Traceback (most recent call last):
+  File "/Users/pamy/Desktop/UWIE ACADEMICS/Github/CSCI40-TasksApp/taskApp/manage.py", line 22, in <module>
+    main()
+  File "/Users/pamy/Desktop/UWIE ACADEMICS/Github/CSCI40-TasksApp/taskApp/manage.py", line 18, in main
+    execute_from_command_line(sys.argv)
+  File "/Users/pamy/Desktop/UWIE ACADEMICS/Github/CSCI40-TasksApp/myenv/lib/python3.9/site-packages/django/core/management/__init__.py", line 442, in execute_from_command_line
+    utility.execute()
+  File "/Users/pamy/Desktop/UWIE ACADEMICS/Github/CSCI40-TasksApp/myenv/lib/python3.9/site-packages/django/core/management/__init__.py", line 416, in execute
+    django.setup()
+  File "/Users/pamy/Desktop/UWIE ACADEMICS/Github/CSCI40-TasksApp/myenv/lib/python3.9/site-packages/django/__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/Users/pamy/Desktop/UWIE ACADEMICS/Github/CSCI40-TasksApp/myenv/lib/python3.9/site-packages/django/apps/registry.py", line 116, in populate
+    app_config.import_models()
+  File "/Users/pamy/Desktop/UWIE ACADEMICS/Github/CSCI40-TasksApp/myenv/lib/python3.9/site-packages/django/apps/config.py", line 269, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 846, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 983, in get_code
+  File "<frozen importlib._bootstrap_external>", line 913, in source_to_code
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/Users/pamy/Desktop/UWIE ACADEMICS/Github/CSCI40-TasksApp/taskApp/tasks/models.py", line 13
+    related_name = 'students'
+    ^
+SyntaxError: invalid syntax
+(myenv) pamy@Pamelas-MacBook-Pro-2 CSCI40-TasksApp % python taskApp/manage.py shell
+Python 3.9.6 (default, Nov 10 2023, 13:38:27) 
+[Clang 15.0.0 (clang-1500.1.0.2.5)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+>>> clear
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+NameError: name 'clear' is not defined
+>>> clear
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+NameError: name 'clear' is not defined
+>>> ls
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+NameError: name 'ls' is not defined
+>>> ls
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+NameError: name 'ls' is not defined
+>>> cd
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+NameError: name 'cd' is not defined
+>>> code .
+  File "<console>", line 1
+    code .
+          ^
+SyntaxError: invalid syntax
+>>> help
+Type help() for interactive help, or help(object) for help about object.
+>>> help()
+
+Welcome to Python 3.9's help utility!
+
+If this is your first time using Python, you should definitely check out
+the tutorial on the Internet at https://docs.python.org/3.9/tutorial/.
+
+Enter the name of any module, keyword, or topic to get help on writing
+Python programs and using Python modules.  To quit this help utility and
+return to the interpreter, just type "quit".
+
+To get a list of available modules, keywords, symbols, or topics, type
+"modules", "keywords", "symbols", or "topics".  Each module also comes
+with a one-line summary of what it does; to list the modules whose name
+or summary contain a given string such as "spam", type "modules spam".
+
+help> help(modules)
+No Python documentation found for 'help(modules)'.
+Use help() to get the interactive help utility.
+Use help(str) for help on the str class.
+
+help> ls
+No Python documentation found for 'ls'.
+Use help() to get the interactive help utility.
+Use help(str) for help on the str class.
+
+help> stop
+No Python documentation found for 'stop'.
+Use help() to get the interactive help utility.
+Use help(str) for help on the str class.
+
+help> 
+You are now leaving help and returning to the Python interpreter.
+If you want to ask for help on a particular object directly from the
+interpreter, you can type "help(object)".  Executing "help('string')"
+has the same effect as typing a particular string at the help> prompt.
+>>> 
+KeyboardInterrupt
+>>> 
+KeyboardInterrupt
+>>> 
+KeyboardInterrupt
+>>> 
+KeyboardInterrupt
+>>> 
+KeyboardInterrupt
+>>> 
+KeyboardInterrupt
+>>> 
+KeyboardInterrupt
+>>> terminal
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+NameError: name 'terminal' is not defined
+>>> terminate
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+NameError: name 'terminate' is not defined
+>>> exit
+Use exit() or Ctrl-D (i.e. EOF) to exit
+>>> ^D
+now exiting InteractiveConsole...
+(myenv) pamy@Pamelas-MacBook-Pro-2 CSCI40-TasksApp % ls
+myenv	taskApp
+(myenv) pamy@Pamelas-MacBook-Pro-2 CSCI40-TasksApp % python taskApp/manage.py makemigrations
+System check identified some issues:
+
+WARNINGS:
+?: (staticfiles.W004) The directory '/Users/pamy/Desktop/UWIE ACADEMICS/Github/CSCI40-TasksApp/taskApp/static' in the STATICFILES_DIRS setting does not exist.
+No changes detected
+(myenv) pamy@Pamelas-MacBook-Pro-2 CSCI40-TasksApp % python taskApp/manage.py makemigrations
+System check identified some issues:
+
+WARNINGS:
+?: (staticfiles.W004) The directory '/Users/pamy/Desktop/UWIE ACADEMICS/Github/CSCI40-TasksApp/taskApp/static' in the STATICFILES_DIRS setting does not exist.
+No changes detected
+(myenv) pamy@Pamelas-MacBook-Pro-2 CSCI40-TasksApp % python taskApp/manage.py migrate
+System check identified some issues:
+
+WARNINGS:
+?: (staticfiles.W004) The directory '/Users/pamy/Desktop/UWIE ACADEMICS/Github/CSCI40-TasksApp/taskApp/static' in the STATICFILES_DIRS setting does not exist.
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, sessions, tasks
+Running migrations:
+  No migrations to apply.
+(myenv) pamy@Pamelas-MacBook-Pro-2 CSCI40-TasksApp % python taskApp/manage.py migrate
+System check identified some issues:
+
+WARNINGS:
+?: (staticfiles.W004) The directory '/Users/pamy/Desktop/UWIE ACADEMICS/Github/CSCI40-TasksApp/taskApp/static' in the STATICFILES_DIRS setting does not exist.
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, sessions, tasks
+Running migrations:
+  No migrations to apply.
+(myenv) pamy@Pamelas-MacBook-Pro-2 CSCI40-TasksApp % python taskApp/manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified some issues:
+
+WARNINGS:
+?: (staticfiles.W004) The directory '/Users/pamy/Desktop/UWIE ACADEMICS/Github/CSCI40-TasksApp/taskApp/static' in the STATICFILES_DIRS setting does not exist.
+
+System check identified 1 issue (0 silenced).
+February 27, 2024 - 09:16:40
+Django version 4.2.10, using settings 'taskApp.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+Not Found: /recipe/1/
+[27/Feb/2024 09:16:46] "GET /recipe/1/ HTTP/1.1" 404 2569
+[27/Feb/2024 09:16:47] "GET / HTTP/1.1" 200 693
+[27/Feb/2024 09:16:47] "GET /static/download.jpeg HTTP/1.1" 304 0
+Not Found: /favicon.ico
+[27/Feb/2024 09:16:47] "GET /favicon.ico HTTP/1.1" 404 2575
+[27/Feb/2024 09:16:50] "GET /admin/ HTTP/1.1" 200 5555
+[27/Feb/2024 09:16:50] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[27/Feb/2024 09:16:50] "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+[27/Feb/2024 09:16:50] "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+[27/Feb/2024 09:16:50] "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+[27/Feb/2024 09:16:50] "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+[27/Feb/2024 09:16:50] "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+[27/Feb/2024 09:16:50] "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+[27/Feb/2024 09:16:50] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+[27/Feb/2024 09:16:50] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+[27/Feb/2024 09:16:52] "GET /admin/auth/user/add/ HTTP/1.1" 200 10034
+[27/Feb/2024 09:16:52] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[27/Feb/2024 09:16:52] "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+[27/Feb/2024 09:16:52] "GET /static/admin/js/core.js HTTP/1.1" 200 5682
+[27/Feb/2024 09:16:52] "GET /static/admin/css/forms.css HTTP/1.1" 200 9090
+[27/Feb/2024 09:16:52] "GET /static/admin/js/actions.js HTTP/1.1" 200 7872
+[27/Feb/2024 09:16:52] "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+[27/Feb/2024 09:16:52] "GET /static/admin/css/widgets.css HTTP/1.1" 200 11921
+[27/Feb/2024 09:16:52] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+[27/Feb/2024 09:16:52] "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+[27/Feb/2024 09:16:52] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 8943
+[27/Feb/2024 09:16:52] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+[27/Feb/2024 09:16:52] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 292458
+[27/Feb/2024 09:16:52] "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+[27/Feb/2024 09:16:59] "POST /admin/auth/user/add/ HTTP/1.1" 200 10355
+[27/Feb/2024 09:16:59] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[27/Feb/2024 09:17:15] "POST /admin/auth/user/add/ HTTP/1.1" 200 10208
+[27/Feb/2024 09:17:15] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[27/Feb/2024 09:17:23] "GET / HTTP/1.1" 200 693
+[27/Feb/2024 09:17:25] "GET /admin/ HTTP/1.1" 200 5555
+[27/Feb/2024 09:17:28] "POST /admin/logout/ HTTP/1.1" 200 3576
+[27/Feb/2024 09:17:29] "GET /admin/ HTTP/1.1" 302 0
+[27/Feb/2024 09:17:29] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4181
+[27/Feb/2024 09:17:29] "GET /static/admin/css/login.css HTTP/1.1" 304 0
+[27/Feb/2024 09:17:32] "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[27/Feb/2024 09:17:32] "GET /admin/ HTTP/1.1" 200 5555
+[27/Feb/2024 09:17:34] "GET /admin/auth/user/add/ HTTP/1.1" 200 10034
+[27/Feb/2024 09:17:34] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[27/Feb/2024 09:17:52] "POST /admin/auth/user/add/ HTTP/1.1" 302 0
+[27/Feb/2024 09:17:52] "GET /admin/auth/user/2/change/ HTTP/1.1" 200 20203
+[27/Feb/2024 09:17:52] "GET /static/admin/js/SelectBox.js HTTP/1.1" 200 4530
+[27/Feb/2024 09:17:52] "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19319
+[27/Feb/2024 09:17:52] "GET /static/admin/js/calendar.js HTTP/1.1" 200 8466
+[27/Feb/2024 09:17:52] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[27/Feb/2024 09:17:52] "GET /static/admin/js/SelectFilter2.js HTTP/1.1" 200 15292
+[27/Feb/2024 09:17:52] "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+[27/Feb/2024 09:17:52] "GET /static/admin/img/icon-unknown.svg HTTP/1.1" 200 655
+[27/Feb/2024 09:17:52] "GET /static/admin/img/selector-icons.svg HTTP/1.1" 200 3291
+[27/Feb/2024 09:17:52] "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+[27/Feb/2024 09:17:52] "GET /static/admin/img/icon-unknown-alt.svg HTTP/1.1" 200 655
+[27/Feb/2024 09:17:52] "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+[27/Feb/2024 09:17:52] "GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 677
+[27/Feb/2024 09:18:10] "GET /admin/ HTTP/1.1" 200 5864
+/Users/pamy/Desktop/UWIE ACADEMICS/Github/CSCI40-TasksApp/taskApp/tasks/models.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified some issues:
+
+WARNINGS:
+?: (staticfiles.W004) The directory '/Users/pamy/Desktop/UWIE ACADEMICS/Github/CSCI40-TasksApp/taskApp/static' in the STATICFILES_DIRS setting does not exist.
+
+System check identified 1 issue (0 silenced).
+February 28, 2024 - 05:32:08
+Django version 4.2.10, using settings 'taskApp.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+^C%                                                                             (myenv) pamy@Pamelas-MacBook-Pro-2 CSCI40-TasksApp % ls
+myenv	taskApp
+(myenv) pamy@Pamelas-MacBook-Pro-2 CSCI40-TasksApp % python taskApp/manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified some issues:
+
+WARNINGS:
+?: (staticfiles.W004) The directory '/Users/pamy/Desktop/UWIE ACADEMICS/Github/CSCI40-TasksApp/taskApp/static' in the STATICFILES_DIRS setting does not exist.
+
+System check identified 1 issue (0 silenced).
+February 28, 2024 - 05:32:21
+Django version 4.2.10, using settings 'taskApp.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+[28/Feb/2024 05:32:28] "GET / HTTP/1.1" 200 693
+[28/Feb/2024 05:32:28] "GET /static/download.jpeg HTTP/1.1" 304 0
+/Users/pamy/Desktop/UWIE ACADEMICS/Github/CSCI40-TasksApp/taskApp/taskApp/settings.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified some issues:
+
+WARNINGS:
+?: (staticfiles.W004) The directory '/Users/pamy/Desktop/UWIE ACADEMICS/Github/CSCI40-TasksApp/taskApp/static' in the STATICFILES_DIRS setting does not exist.
+
+System check identified 1 issue (0 silenced).
+February 28, 2024 - 05:32:53
+Django version 4.2.10, using settings 'taskApp.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+^C%                                                                             (myenv) pamy@Pamelas-MacBook-Pro-2 CSCI40-TasksApp % python taskApp/manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified some issues:
+
+WARNINGS:
+?: (staticfiles.W004) The directory '/Users/pamy/Desktop/UWIE ACADEMICS/Github/CSCI40-TasksApp/taskApp/static' in the STATICFILES_DIRS setting does not exist.
+
+System check identified 1 issue (0 silenced).
+February 28, 2024 - 05:33:00
+Django version 4.2.10, using settings 'taskApp.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+/Users/pamy/Desktop/UWIE ACADEMICS/Github/CSCI40-TasksApp/taskApp/taskApp/settings.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/threading.py", line 973, in _bootstrap_inner
+    self.run()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/threading.py", line 910, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/pamy/Desktop/UWIE ACADEMICS/Github/CSCI40-TasksApp/myenv/lib/python3.9/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/pamy/Desktop/UWIE ACADEMICS/Github/CSCI40-TasksApp/myenv/lib/python3.9/site-packages/django/core/management/commands/runserver.py", line 133, in inner_run
+    self.check(display_num_errors=True)
+  File "/Users/pamy/Desktop/UWIE ACADEMICS/Github/CSCI40-TasksApp/myenv/lib/python3.9/site-packages/django/core/management/base.py", line 485, in check
+    all_issues = checks.run_checks(
+  File "/Users/pamy/Desktop/UWIE ACADEMICS/Github/CSCI40-TasksApp/myenv/lib/python3.9/site-packages/django/core/checks/registry.py", line 88, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/Users/pamy/Desktop/UWIE ACADEMICS/Github/CSCI40-TasksApp/myenv/lib/python3.9/site-packages/django/core/checks/urls.py", line 14, in check_url_config
+    return check_resolver(resolver)
+  File "/Users/pamy/Desktop/UWIE ACADEMICS/Github/CSCI40-TasksApp/myenv/lib/python3.9/site-packages/django/core/checks/urls.py", line 24, in check_resolver
+    return check_method()
+  File "/Users/pamy/Desktop/UWIE ACADEMICS/Github/CSCI40-TasksApp/myenv/lib/python3.9/site-packages/django/urls/resolvers.py", line 494, in check
+    for pattern in self.url_patterns:
+  File "/Users/pamy/Desktop/UWIE ACADEMICS/Github/CSCI40-TasksApp/myenv/lib/python3.9/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/pamy/Desktop/UWIE ACADEMICS/Github/CSCI40-TasksApp/myenv/lib/python3.9/site-packages/django/urls/resolvers.py", line 715, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/pamy/Desktop/UWIE ACADEMICS/Github/CSCI40-TasksApp/myenv/lib/python3.9/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/pamy/Desktop/UWIE ACADEMICS/Github/CSCI40-TasksApp/myenv/lib/python3.9/site-packages/django/urls/resolvers.py", line 708, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/Users/pamy/Desktop/UWIE ACADEMICS/Github/CSCI40-TasksApp/taskApp/taskApp/urls.py", line 25, in <module>
+    ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+  File "/Users/pamy/Desktop/UWIE ACADEMICS/Github/CSCI40-TasksApp/myenv/lib/python3.9/site-packages/django/conf/__init__.py", line 109, in __getattr__
+    val = self._add_script_prefix(val)
+  File "/Users/pamy/Desktop/UWIE ACADEMICS/Github/CSCI40-TasksApp/myenv/lib/python3.9/site-packages/django/conf/__init__.py", line 156, in _add_script_prefix
+    if value.startswith(("http://", "https://", "/")):
+AttributeError: 'tuple' object has no attribute 'startswith'
+/Users/pamy/Desktop/UWIE ACADEMICS/Github/CSCI40-TasksApp/taskApp/taskApp/settings.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/threading.py", line 973, in _bootstrap_inner
+    self.run()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/threading.py", line 910, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/pamy/Desktop/UWIE ACADEMICS/Github/CSCI40-TasksApp/myenv/lib/python3.9/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/pamy/Desktop/UWIE ACADEMICS/Github/CSCI40-TasksApp/myenv/lib/python3.9/site-packages/django/core/management/commands/runserver.py", line 133, in inner_run
+    self.check(display_num_errors=True)
+  File "/Users/pamy/Desktop/UWIE ACADEMICS/Github/CSCI40-TasksApp/myenv/lib/python3.9/site-packages/django/core/management/base.py", line 485, in check
+    all_issues = checks.run_checks(
+  File "/Users/pamy/Desktop/UWIE ACADEMICS/Github/CSCI40-TasksApp/myenv/lib/python3.9/site-packages/django/core/checks/registry.py", line 88, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/Users/pamy/Desktop/UWIE ACADEMICS/Github/CSCI40-TasksApp/myenv/lib/python3.9/site-packages/django/core/checks/urls.py", line 14, in check_url_config
+    return check_resolver(resolver)
+  File "/Users/pamy/Desktop/UWIE ACADEMICS/Github/CSCI40-TasksApp/myenv/lib/python3.9/site-packages/django/core/checks/urls.py", line 24, in check_resolver
+    return check_method()
+  File "/Users/pamy/Desktop/UWIE ACADEMICS/Github/CSCI40-TasksApp/myenv/lib/python3.9/site-packages/django/urls/resolvers.py", line 494, in check
+    for pattern in self.url_patterns:
+  File "/Users/pamy/Desktop/UWIE ACADEMICS/Github/CSCI40-TasksApp/myenv/lib/python3.9/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/pamy/Desktop/UWIE ACADEMICS/Github/CSCI40-TasksApp/myenv/lib/python3.9/site-packages/django/urls/resolvers.py", line 715, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/pamy/Desktop/UWIE ACADEMICS/Github/CSCI40-TasksApp/myenv/lib/python3.9/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/pamy/Desktop/UWIE ACADEMICS/Github/CSCI40-TasksApp/myenv/lib/python3.9/site-packages/django/urls/resolvers.py", line 708, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/Users/pamy/Desktop/UWIE ACADEMICS/Github/CSCI40-TasksApp/taskApp/taskApp/urls.py", line 25, in <module>
+    ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+  File "/Users/pamy/Desktop/UWIE ACADEMICS/Github/CSCI40-TasksApp/myenv/lib/python3.9/site-packages/django/conf/__init__.py", line 109, in __getattr__
+    val = self._add_script_prefix(val)
+  File "/Users/pamy/Desktop/UWIE ACADEMICS/Github/CSCI40-TasksApp/myenv/lib/python3.9/site-packages/django/conf/__init__.py", line 156, in _add_script_prefix
+    if value.startswith(("http://", "https://", "/")):
+AttributeError: 'tuple' object has no attribute 'startswith'
+/Users/pamy/Desktop/UWIE ACADEMICS/Github/CSCI40-TasksApp/taskApp/taskApp/settings.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified some issues:
+
+WARNINGS:
+?: (staticfiles.W004) The directory '/Users/pamy/Desktop/UWIE ACADEMICS/Github/CSCI40-TasksApp/taskApp/taskApp/tasks/static' in the STATICFILES_DIRS setting does not exist.
+
+System check identified 1 issue (0 silenced).
+February 28, 2024 - 05:33:42
+Django version 4.2.10, using settings 'taskApp.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+/Users/pamy/Desktop/UWIE ACADEMICS/Github/CSCI40-TasksApp/taskApp/taskApp/settings.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified some issues:
+
+WARNINGS:
+?: (staticfiles.W004) The directory '/Users/pamy/Desktop/UWIE ACADEMICS/Github/CSCI40-TasksApp/taskApp/taskApp/tasks/static/download.jpeg' in the STATICFILES_DIRS setting does not exist.
+
+System check identified 1 issue (0 silenced).
+February 28, 2024 - 05:34:31
+Django version 4.2.10, using settings 'taskApp.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+	/Users/pamy/Desktop/UWIE ACADEMICS/Github/CSCI40-TasksApp/taskApp/taskApp/settings.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 28, 2024 - 05:34:39
+Django version 4.2.10, using settings 'taskApp.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+/Users/pamy/Desktop/UWIE ACADEMICS/Github/CSCI40-TasksApp/taskApp/taskApp/settings.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 28, 2024 - 05:34:44
+Django version 4.2.10, using settings 'taskApp.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+/Users/pamy/Desktop/UWIE ACADEMICS/Github/CSCI40-TasksApp/taskApp/taskApp/settings.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 28, 2024 - 05:34:47
+Django version 4.2.10, using settings 'taskApp.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+[28/Feb/2024 05:34:54] "GET / HTTP/1.1" 200 693
+/Users/pamy/Desktop/UWIE ACADEMICS/Github/CSCI40-TasksApp/taskApp/tasks/models.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 28, 2024 - 05:37:49
+Django version 4.2.10, using settings 'taskApp.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+^C%                                                                             (myenv) pamy@Pamelas-MacBook-Pro-2 CSCI40-TasksApp % mysql taskApp 
+zsh: command not found: mysql
+(myenv) pamy@Pamelas-MacBook-Pro-2 CSCI40-TasksApp % mysql taskApp/db.sqlite3 
+zsh: command not found: mysql
+(myenv) pamy@Pamelas-MacBook-Pro-2 CSCI40-TasksApp % mysql taskApp/db.sqlite3
+zsh: command not found: mysql
+(myenv) pamy@Pamelas-MacBook-Pro-2 CSCI40-TasksApp % mysql taskApp/db.sqlite3ls
+zsh: command not found: mysql
+(myenv) pamy@Pamelas-MacBook-Pro-2 CSCI40-TasksApp % ls
+myenv	taskApp
+(myenv) pamy@Pamelas-MacBook-Pro-2 CSCI40-TasksApp % python taskApp/manage.py shell
+Python 3.9.6 (default, Nov 10 2023, 13:38:27) 
+[Clang 15.0.0 (clang-1500.1.0.2.5)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+>>> from taskApp.models import Task
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+ModuleNotFoundError: No module named 'taskApp.models'
+>>> from tasks.models import Tasks
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+ImportError: cannot import name 'Tasks' from 'tasks.models' (/Users/pamy/Desktop/UWIE ACADEMICS/Github/CSCI40-TasksApp/taskApp/tasks/models.py)
+>>> from tasks.models import Task
+>>> task = Task.objects.create(name="CSCI40 Lab", due_date="2024-02-28 12:00:00")
+/Users/pamy/Desktop/UWIE ACADEMICS/Github/CSCI40-TasksApp/myenv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1595: RuntimeWarning: DateTimeField Task.due_date received a naive datetime (2024-02-28 12:00:00) while time zone support is active.
+  warnings.warn(
+>>> >>> from task.mo import Task
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+ModuleNotFoundError: No module named 'task'
+>>> from tasks.models import Task
+>>> task = Task.objects.create(name="CSCI40 Lab Catchup", due_date=datetime.date(2024,2,28))
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+NameError: name 'datetime' is not defined
+>>> task = Task.objects.create(name="CSCI40 Lab Catchup", due_date=datetime.date(2024,2,28))
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+NameError: name 'datetime' is not defined
+>>> import datetime
+>>> task = Task.objects.create(name="CSCI40 Lab Catchup", due_date=datetime.date(2024,2,28))
+/Users/pamy/Desktop/UWIE ACADEMICS/Github/CSCI40-TasksApp/myenv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1535: RuntimeWarning: DateTimeField Task.due_date received a naive datetime (2024-02-28 00:00:00) while time zone support is active.
+  warnings.warn(
+>>> task.is_overdue()
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+  File "/Users/pamy/Desktop/UWIE ACADEMICS/Github/CSCI40-TasksApp/taskApp/tasks/models.py", line 13, in is_overdue
+    """
+TypeError: can't compare datetime.datetime to datetime.date
+>>> task.is_overdue()
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+  File "/Users/pamy/Desktop/UWIE ACADEMICS/Github/CSCI40-TasksApp/taskApp/tasks/models.py", line 13, in is_overdue
+    return timezone.now() > self.due_date
+TypeError: can't compare datetime.datetime to datetime.date
+>>> task.is_overdue()
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+  File "/Users/pamy/Desktop/UWIE ACADEMICS/Github/CSCI40-TasksApp/taskApp/tasks/models.py", line 13, in is_overdue
+    return timezone.now().date() > self.due_date.date()
+TypeError: can't compare datetime.datetime to datetime.date
+>>> task.is_overdue()
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+  File "/Users/pamy/Desktop/UWIE ACADEMICS/Github/CSCI40-TasksApp/taskApp/tasks/models.py", line 13, in is_overdue
+    return timezone.now().date() > self.due_date.date()
+TypeError: can't compare datetime.datetime to datetime.date
+>>> task.is_overdue()
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+  File "/Users/pamy/Desktop/UWIE ACADEMICS/Github/CSCI40-TasksApp/taskApp/tasks/models.py", line 13, in is_overdue
+    return timezone.now().date() > self.due_date.date()
+TypeError: can't compare datetime.datetime to datetime.date
+>>> task.is_overdue()
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+  File "/Users/pamy/Desktop/UWIE ACADEMICS/Github/CSCI40-TasksApp/taskApp/tasks/models.py", line 13, in is_overdue
+    return timezone.now().date() > self.due_date.date()
+TypeError: can't compare datetime.datetime to datetime.date
+>>> task = Task.objects.first()
+>>> print(type(task.due_date))
+<class 'datetime.datetime'>
+>>> task.is_overdue()
+False
+>>> task_2 = Task.objects.create(name="CSCI142i Followup", due_date="2024-02-27")
+/Users/pamy/Desktop/UWIE ACADEMICS/Github/CSCI40-TasksApp/myenv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1595: RuntimeWarning: DateTimeField Task.due_date received a naive datetime (2024-02-27 00:00:00) while time zone support is active.
+  warnings.warn(
+>>> print(task_2)
+Task object (3)
+>>> print(task)
+Task object (1)
+>>> print(task_2)
+Task object (3)
+>>> print(task_2.due_date)
+2024-02-27
+>>> all_tasks = Task.objects.all()
+>>> for task in all_tasks:
+... print(task.name, task.due_date)
+  File "<console>", line 2
+    print(task.name, task.due_date)
+    ^
+IndentationError: expected an indented block
+>>> print(task.name, task.due_date)
+CSCI40 Lab 2024-02-28 12:00:00+00:00
+>>> for task in all_tasks: print(task.name, task.due_date)
+... 
+CSCI40 Lab 2024-02-28 12:00:00+00:00
+CSCI40 Lab Catchup 2024-02-28 00:00:00+00:00
+CSCI142i Followup 2024-02-27 00:00:00+00:00
+>>> for task in all_tasks: print(task.name, task.due_date)
+... 
+CSCI40 Lab 2024-02-28 12:00:00+00:00
+CSCI40 Lab Catchup 2024-02-28 00:00:00+00:00
+CSCI142i Followup 2024-02-27 00:00:00+00:00
+>>> commands > models.txt
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+NameError: name 'commands' is not defined
+>>> 
+KeyboardInterrupt
+>>> 
+KeyboardInterrupt
+>>> exit
+Use exit() or Ctrl-D (i.e. EOF) to exit
+>>> ^D
+now exiting InteractiveConsole...
+(myenv) pamy@Pamelas-MacBook-Pro-2 CSCI40-TasksApp % deactivate                    
+pamy@Pamelas-MacBook-Pro-2 CSCI40-TasksApp % commands > models.txt
+zsh: command not found: commands
+pamy@Pamelas-MacBook-Pro-2 CSCI40-TasksApp % script -t 2> timing.txt -a models.txt          
+
+Script started, output file is models.txt
+pamy@Pamelas-MacBook-Pro-2 CSCI40-TasksApp % history > models.txt
+
+pamy@Pamelas-MacBook-Pro-2 CSCI40-TasksApp % history > models.txt
+
+pamy@Pamelas-MacBook-Pro-2 CSCI40-TasksApp % 

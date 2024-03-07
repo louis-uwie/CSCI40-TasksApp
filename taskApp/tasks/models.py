@@ -1,5 +1,7 @@
 from django.db import models
 from django.utils import timezone
+    
+    #TODO: create profile class for proxy
 
 class Task(models.Model):
     name = models.CharField(max_length=100)
